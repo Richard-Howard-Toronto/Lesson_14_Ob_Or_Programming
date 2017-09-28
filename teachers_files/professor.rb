@@ -15,4 +15,8 @@ class Professor < Person
     cohort.each { |student| student.learn }
   end
 
+  def slack(cohort)
+    cohort.each { |student| student.slack }
+  end
+
 end
