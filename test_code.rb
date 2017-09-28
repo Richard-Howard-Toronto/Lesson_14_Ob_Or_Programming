@@ -12,8 +12,18 @@
   end
 
   def samplearray(array1)
-    random_sample = array1.sample
-    puts "random sample is #{random_sample}"
+    random_sample_array = 0
+    counter = 0
+    while counter < 10
+      random_sample = array1.sample
+      random_sample_array << random_sample
+      counter += 1
+    end
+  end
+
+  def random_sample_array
+    @samplearray
+    return 
   end
 
 #------------------------
@@ -23,3 +33,5 @@
   printarray(array1)
 
   samplearray(array1)
+
+p random_sample_array
