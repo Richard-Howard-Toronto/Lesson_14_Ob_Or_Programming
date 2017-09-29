@@ -113,15 +113,6 @@ end
 
 
 cat1 = Cat.create("fluffy")
-cat2 = Cat.create("patches")
-cat3 = Cat.create("blackie")
+
 
 p cat1
-cat1.eat
-p cat1
-cat1.play_with_cat
-p cat1
-cat1.adopt
-
-p cat1.name_of_cat
-p cat2.name_of_cat
