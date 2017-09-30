@@ -17,17 +17,17 @@ class System #give it an attribute bodies
       @bodies.each do |body|
         x += body.mass
         end
-        return x
+      return x
     end
 
 
     def moonmass?
       x = 0
-      @bodies.each do |body|
-        if body.class == Moon
-        x += body.mass
+        @bodies.each do |body|
+          if body.class == Moon
+            x += body.mass
+          end
         end
-      end
         return x
     end
 
@@ -136,6 +136,7 @@ end
 
 
 our_solar_system = System.new
+alpha_centauri = System.new
 
 neptune = Body.new('Neptune',143)
 venus = Body.new('Venus',222)
@@ -156,6 +157,12 @@ our_solar_system.add(moon1)
 our_solar_system.add(moon2)
 our_solar_system.add(moon3)
 our_solar_system.add(sun1)
+
+giantstar = System.new()
+alpha_centauri.add(giantstar)
+p "---"
+p alpha_centauri.inspect
+p "---"
 
 #readers
 
