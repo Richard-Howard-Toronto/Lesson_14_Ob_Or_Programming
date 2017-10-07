@@ -68,7 +68,7 @@ class Planet < Body
   end
 
   def print_all
-    puts "#{name},#{mass},#{day},#{year}""
+    puts "#{name},#{mass},#{day},#{year}"
   end
 
 end

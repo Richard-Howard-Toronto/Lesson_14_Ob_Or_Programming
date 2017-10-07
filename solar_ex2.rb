@@ -20,6 +20,14 @@ class System #give it an attribute bodies
       return x
     end
 
+    def displayall?
+      x = 0
+      @bodies.each do |body|
+        puts body.inspect
+        end
+      return x
+    end
+
 
     def moonmass?
       x = 0
@@ -184,6 +192,15 @@ p sun1.name
 p sun1.mass
 p mars.mass
 
+
+p "mass"
 p our_solar_system.mass?
+
+p "displayall"
+p our_solar_system.displayall?
+
+p "moon mass"
 p our_solar_system.moonmass?
+
+p "moon cycles"
 p our_solar_system.mooncycles?
